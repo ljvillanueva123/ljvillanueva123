@@ -1,0 +1,18 @@
+import javax.swing.JOptionPane;
+
+public class TriangleAreaCalculator {
+    public static void main(String[] args) {
+        // Get the base and height of the triangle from the user
+        String baseStr = JOptionPane.showInputDialog("Enter the base of the triangle:");
+        double base = Double.parseDouble(baseStr);
+
+        String heightStr = JOptionPane.showInputDialog("Enter the height of the triangle:");
+        double height = Double.parseDouble(heightStr);
+
+        // Calculate the area of the triangle
+        double area = 0.5 * base * height;
+
+        // Display the result using JOptionPane
+        JOptionPane.showMessageDialog(null, "The area of the triangle is: " + area);
+    }
+}
